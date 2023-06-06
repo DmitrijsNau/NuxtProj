@@ -3,10 +3,10 @@ export interface Id {
     IdB: number
 }
 
-type GameType = 'FPS' | 'RTS' | 'Open-World' | 'TBS'
+type GameType = 'FPS' | 'RTS' | 'OpenWorld' | 'Moba'
 
 export interface Game {
-    label: string
-    type: Game
-    isComplete: boolean
+    id: string
+    category: GameType
+    isFun: boolean
 }

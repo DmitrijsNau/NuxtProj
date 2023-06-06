@@ -1,6 +1,5 @@
 <script setup>
 import { ref, onMounted } from 'vue'
-import axios from 'axios'
 import ExampleCard from '@/components/ExampleCard.vue'
 import EventService from '@/services/ExampleService.js'
 import useExampleStore from "@/stores/example"
@@ -37,9 +36,11 @@ function clearState(){
 <template>
   <div class="examples">
     <ExampleCard v-for="example in examples" :key="example.id" :example="example" />
-  </div>      
-  <button class="button1" @click="flashMessage">Check State</button>
-  <button class="button2" @click="clearState">Clear State</button>
+    <button class="button1" @click="flashMessage">Check State</button>
+    <button class="button2" @click="clearState">Clear State</button> 
+  </div>     
+
+
   
 </template>
 
@@ -53,7 +54,6 @@ function clearState(){
 .button1{
   padding: 10px;
   margin-bottom: 18px;
-  margin-left: 10px;
 }
 .button2{
   padding: 10px;

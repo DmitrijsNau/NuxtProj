@@ -15,7 +15,7 @@
         <div id="container">
             <h1>{{title}}</h1>
             <p>{{content}}</p>
-            <p>Using typescript type, the id of this card is: {{id.IdA}} and {{id.IdB}}</p>
+            <p>Using type, the id of this card is: {{id.IdA}} and {{id.IdB}}</p>
         </div>
     </div>
 </template>
